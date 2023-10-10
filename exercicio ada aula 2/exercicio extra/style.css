@@ -1,0 +1,32 @@
+img{
+    width: 100px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+div{
+    margin: 2em;
+}
+
+td, th {
+    width: 100vw;
+    padding: 1em;
+    text-align: center;
+    border: solid 1px gray;
+    font-size: 25px; 
+}
+
+td{
+    background-color: #A4BD00;
+}
+
+th{
+    color: aliceblue;
+    background-color: #0A0F75;
+}
+
+.name{
+    background-color:#39BAE6 ;
+}
