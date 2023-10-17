@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercicio</title>
+</head>
+
+<body>
+    <h1>Formulario Festival</h1>
+    <form>
+        <fieldset class="forms">
+            <legend>Informações Pessoais</legend>
+            <div class="first-form">
+                <div>
+                    <label class="label-first-form" for="name">Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div>
+                    <label class="label-first-form" for="idade">Idade</label>
+                    <input type="number" name="idade" placeholder="Digite sua idade" min="18" max="100" step="1"
+                        required>
+                </div>
+                <div>
+                    <label class="label-first-form" for="tel">Telefone</label>
+                    <input type="tel" name="tel" placeholder="Digite seu tel." pattern="/^\(\d{2}\)\ \d{4}\-\d{4}$/"
+                        required>
+                </div>
+                <div>
+                    <div class="genero">
+                        <label for="genero">Masculino</label>
+                        <input type="radio" name="genero" required>
+
+                        <label for="genero">Feminino</label>
+                        <input type="radio" name="genero" required>
+                    </div>
+                </div>
+                <div>
+                    <label class="label-first-form" for="data-nasc">Data de Nascimento</label>
+                    <input type="date" name="data-nasc" min="01/01/1900" max="01/01/2005" required>
+                </div>
+            </div>
+
+        </fieldset>
+        <fieldset class="forms">
+            <legend>Informações Gerais</legend>
+            <div class="horario-container">
+                <label for="horario">Escolha um horario das 7h00 às 17h00</label>
+                <input type="time" name="horario" min="7:00" max="17:00" required>
+            </div>
+            <div class="hobbie">
+                <label for="list">Selecione um hobbie:</label>
+                <div>
+                    <label class="hobbie-label" for="desenhar">desenhar</label>
+                    <input type="checkbox" name="desenhar" id="desenhar">
+                </div>
+                <div>
+                    <label class="hobbie-label" for="jogar">jogar video game</label>
+                    <input type="checkbox" name="jogar video game" id="jogar">
+                </div>
+                <div>
+                    <label class="hobbie-label" for="dançar">dançar</label>
+                    <input type="checkbox" name="dançar" id="dançar">
+                </div>
+                <div>
+                    <label class="hobbie-label" for="correr">correr</label>
+                    <input type="checkbox" name="correr" id="correr">
+                </div>
+                <div>
+                    <label class="hobbie-label" for="music">escutar musica</label>
+                    <input type="checkbox" name="escutar musica" id="music">
+                </div>
+                <div>
+                    <label class="hobbie-label" for="sair">sair ao parque</label>
+                    <input type="checkbox" name="sair ao parque" id="sair">
+                </div>
+                <div>
+                    <label class="hobbie-label" for="acampar">acampar</label>
+                    <input type="checkbox" name="acampar" id="acampar">
+                </div>
+            </div>
+            <div class="select-container">
+                <label for="list"></label>
+                <select name="list" required>
+                    <option>Selecione uma cor</option>
+                    <option value="red">vermelho</option>
+                    <option value="blue">azul</option>
+                    <option valeu="green">verde</option>
+                    <option valeu="gray">cinza</option>
+                    <option valeu="pink">rosa</option>
+                    <option valeu="purple">roxo</option>
+                    <option valeu="black">preto</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button type="submit" required>Enviar</button>
+                <button type="reset">Reset</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
