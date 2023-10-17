@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Inter:wght@200;300;400;600&family=Quicksand&family=Sarala&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #000235;
+    color: #fff;
+}
+
+h2 {
+    font-family: 'DM Sans';
+    font-size: 40px;
+    color: #6FBBFF;
+    padding: 2em;
+    text-align: center;
+}
+
+p {
+    font-family: 'DM Sans';
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 5em;
+}
+
+.title1 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'DM Sans';
+    height: 700;
+}
+
+.about-me {
+    font-family: 'DM Sans';
+    font-size: 18px;
+    text-align: center;
+}
+
+.contacts-div {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.contacts-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.contacts-text {
+    font-family: 'DM Sans';
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
